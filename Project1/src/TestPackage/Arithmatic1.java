@@ -4,6 +4,7 @@ public class Arithmatic1 {
 	//(((((10+2)+2)-2)*2)/2)
 	public int sum(int a,int b)
 	{
+		System.out.println("This is latest code");
 		int c=a+b;
 		System.out.println("Addition result="+c);
 		return c;
