@@ -2,25 +2,25 @@ package TestPackage;
 
 public class Sclass1 
 {
-	public Sclass1()
+	public void P1()
 	{
-		
-		System.out.println("Parent Default Constructor");
+		this.P4(6, 8, 9);
+		System.out.println("Parent Default Method");
 		
 	}
-	public Sclass1(int a)
+	public void P2(int a)
 	{
-	
-		System.out.println("Parent One Parameterized Constructor");
+		this.P1();
+		System.out.println("Parent One Parameterized Method");
 	}
-	public Sclass1(int a, int b)
+	public void P3(int a, int b)
 	{
-		
-		System.out.println("Parent Two Parameterized Constructor");
+		this.P2(4);
+		System.out.println("Parent Two Parameterized Method");
 	}
-	public Sclass1(int a, int b,int c)
+	public void P4(int a, int b,int c)
 	{
-		System.out.println("Parent Three Parameterized Constructor");
+		System.out.println("Parent Three Parameterized Method");
 	}
 
 }

@@ -2,27 +2,31 @@ package TestPackage;
 
 public class Sclass2 extends Sclass1
 {
-	public Sclass2()
+	public void C1()
 	{
-		System.out.println("Child Default Constructor");
-	}
-	public Sclass2(int a)
-	{
+		super.P3(4, 6);
+		System.out.println("Child Default Method");
 		
-		System.out.println("Child One Parameterized Constructor");
 	}
-	public Sclass2(int a,int b)
+	public void C2(int a)
 	{
-		System.out.println("Child Two Parameterized Constructor");
+		this.C3(4,5);
+		System.out.println("Child One Parameterized Method");
 	}
-	public Sclass2(int a,int b,int c)
+	public void C3(int a,int b)
 	{
-		
-		System.out.println("Child Three Parameterized Constructor");
+		this.C4(2, 5, 8);
+		System.out.println("Child Two Parameterized Method");
+	}
+	public void C4(int a,int b,int c)
+	{
+		this.C1();
+		System.out.println("Child Three Parameterized Method");
 	}
 	public static void main(String[] args) 
 	{
-		Sclass2 obj=new Sclass2(45,4,5);
+		Sclass2 obj=new Sclass2();
+		obj.C2(2);
 		
 	}
 
