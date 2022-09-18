@@ -11,7 +11,7 @@ public class Swift extends Maruti
 		Swift obj=new Swift();
 		obj.modeltype();
 		obj.baseprice();
-		obj.price=122;
+		obj.price=133;
 		System.out.println(obj.price);
 		
 	}
