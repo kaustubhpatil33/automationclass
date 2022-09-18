@@ -14,8 +14,7 @@ public class SwirftVDI extends Swift
 		s.baseprice();
 		s.price=150;
 		System.out.println(s.price);
-		
-		
+			
 	}
 
 }
